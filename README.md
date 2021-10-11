@@ -3,6 +3,7 @@
 List all library ideas here.
 <ul>
 	<li>Array</li>
+	<li>bigint</li>
 </ul>
 
 <hr/>
@@ -20,3 +21,13 @@ List all library ideas here.
 	<li>Next...</li>
 </ul>
 
+<h1>bigint</h1>
+<ul>
+	<li>Addition (shorthand notation too)</li>
+	<li>Subtraction (shorthand notation too)</li>
+	<li>Multiplication, using Karatsuba Algorithm.</li>
+	<li>Division</li>
+	<li>Modulus Operation</li>
+	<li>GCD of two numbers, using Euclid's Division Algorithm.</li>
+	<li>LCM of two numbers.</li>
+</ul>
