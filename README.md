@@ -18,7 +18,6 @@ List all library ideas here.
 	<li>Operator []</li>
 	<li>Display</li>
 	<li>Filter</li>
-	<li>Next...</li>
 </ul>
 
 <h1>bigint</h1>
