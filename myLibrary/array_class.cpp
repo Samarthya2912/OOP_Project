@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 template <class T>
@@ -23,6 +24,7 @@ class Array {
     Array operator+(Array<T>&);
     T& operator[](int);
     Array slice(int start, int end);
+    Array filter(bool (*filter_function)(T arg));
 
     ~Array() {
         delete[] arr;
@@ -65,4 +67,23 @@ Array<T> Array<T>::slice(int start, int end) {
     }
 
     return sliced_Arr;
+}
+
+template <class T>
+Array<T> Array<T>::filter(bool (*filter_func)(T arg)) {
+    int cnt = 0;
+    vector<T> selected;
+
+    for(int i = 0; i < size; i++) {
+        if(filter_func(arr[i])) selected.push_back(arr[i]);
+    }
+
+    Array<T> newArray(selected.size());
+    int j = 0;
+
+    for(auto i:selected) {
+        newArray.arr[j++] = i;
+    }
+
+    return newArray;
 }

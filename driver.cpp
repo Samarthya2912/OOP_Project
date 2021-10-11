@@ -7,6 +7,10 @@ int doubler(int i) {
     return 2*i;
 }
 
+bool lowthanthree(int i) {
+    return i < 3;
+}
+
 int main() {
     // Array<int> a(5, 7);
     // Array<int> b(5, 8);
@@ -18,7 +22,9 @@ int main() {
 
     Array<int> d(10, doubler);
     d.display();
-    auto e = d.slice(2,6);
-    e.display();
+    // auto e = d.slice(2,6);
+    // e.display();
+    auto f = d.filter(lowthanthree);
+    f.display();
     return  0;
 }
