@@ -16,6 +16,6 @@ List all library ideas here.
 	<li>Operator +</li>
 	<li>Operator []</li>
 	<li>Display</li>
-	<li></li>
+	<li>Next...</li>
 </ul>
 
