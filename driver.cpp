@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "./myLibrary/array_class.cpp"
+#include "./myLibrary/array.cpp"
 #include "./myLibrary/bigint.cpp"
 using namespace std;
 
