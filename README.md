@@ -4,6 +4,7 @@ List all library ideas here.
 <ul>
 	<li>Array</li>
 	<li>bigint</li>
+	<li>flexArray</li>
 </ul>
 
 <hr/>

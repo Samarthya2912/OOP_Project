@@ -4,6 +4,7 @@ using namespace std;
 
 template <class T>
 class Array {
+    protected:
     T* arr;
     int size;
 
@@ -25,6 +26,7 @@ class Array {
     T& operator[](int);
     Array slice(int start, int end);
     Array filter(bool (*filter_function)(T arg));
+    int size();
 
     ~Array() {
         delete[] arr;
@@ -86,4 +88,9 @@ Array<T> Array<T>::filter(bool (*filter_func)(T arg)) {
     }
 
     return newArray;
+}
+
+template <class T>
+int Array<T>::size() {
+    return this->size;
 }
