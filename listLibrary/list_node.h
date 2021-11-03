@@ -50,8 +50,4 @@ public:
     {
         return (current == other.current);
     }
-
-    // TODO: complete the code for NodeIterator here
 };
-
-// do not edit below this line
