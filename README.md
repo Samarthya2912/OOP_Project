@@ -39,3 +39,15 @@ List all library ideas here.
 	<li>Increment Operation on List Node</li>
 	<li>Compare List Nodes using Operator Overloading</li>
 </ul>
+
+<h1>Stack</h1>
+<ul>
+	<li>Dynamic Allocation of Nodes</li>
+	<li>Inheritance using Linked Listed Custom Library</l1>
+</ul>
+
+<h1>Queue</h1>
+<ul>
+	<li>Dynamic Allocation of Nodes</li>
+	<li>Inheritance using Linked Listed Custom Library</l1>
+</ul>
