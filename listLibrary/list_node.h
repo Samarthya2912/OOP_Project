@@ -1,5 +1,13 @@
+#ifndef NODE_H
+#define NODE_H
+
 #include <iostream>
-using namespace std;
+using std::cerr;
+using std::cout;
+using std::endl;
+
+// TODO your code for the Node class goes here:
+// (Note the 'NodeIterator' class will report lots of errors until Node exists
 
 template <typename T>
 class Node
@@ -50,4 +58,10 @@ public:
     {
         return (current == other.current);
     }
+
+    // TODO: complete the code for NodeIterator here
 };
+
+// do not edit below this line
+
+#endif

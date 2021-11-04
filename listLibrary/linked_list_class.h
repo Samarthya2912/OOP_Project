@@ -1,20 +1,21 @@
+#ifndef LINKEDLIST_H
+#define LINKEDLIST_H
+
 #include "list_node.h"
 #include <iostream>
 #include <string>
 #include <initializer_list>
 
 using namespace std;
-
 template <typename T>
 class LinkedList
 {
-private:
+public:
     int count;
     Node<T> *head;
     Node<T> *tail;
     NodeIterator<T> currentPointer;
 
-public:
     LinkedList()
         : count(0), head(nullptr), tail(nullptr)
     {
@@ -144,3 +145,5 @@ public:
         head = nullptr;
     }
 };
+
+#endif
