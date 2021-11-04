@@ -16,15 +16,15 @@ using namespace std;
 
 template <typename T>
 
-int doubler(int i)
-{
-    return 2 * i;
-}
+// int doubler(int i)
+// {
+//     return 2 * i;
+// }
 
-bool lowthanthree(int i)
-{
-    return i < 3;
-}
+// bool lowthanthree(int i)
+// {
+//     return i < 3;
+// }
 
 int main()
 {
