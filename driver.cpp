@@ -14,18 +14,6 @@
 
 using namespace std;
 
-template <typename T>
-
-// int doubler(int i)
-// {
-//     return 2 * i;
-// }
-
-// bool lowthanthree(int i)
-// {
-//     return i < 3;
-// }
-
 int main()
 {
 }

@@ -133,6 +133,97 @@ public:
         return currentPointer;
     }
 
+    void printlist(Node<T> *head)
+    {
+        Node<T> *temp = head;
+        while (temp != nullptr)
+        {
+            cout << temp->data << " ";
+            temp = temp->next;
+        }
+        cout << endl;
+    }
+
+    Node<T> *mergeSortedList(Node<T> *h1, Node<T> *h2)
+    {
+        if (h1 == NULL)
+        {
+            return h2;
+        }
+
+        if (h2 == NULL)
+        {
+            return h1;
+        }
+
+        Node<T> *head;
+        Node<T> *tail;
+
+        if (h1->data <= h2->data)
+        {
+            head = h1;
+            tail = h1;
+            h1 = h1->next;
+        }
+        else
+        {
+            head = h2;
+            tail = h2;
+            h2 = h2->next;
+        }
+
+        while (h1 != NULL && h2 != NULL)
+        {
+            if (h1->data <= h2->data)
+            {
+                tail->next = h1;
+                tail = h1;
+                h1 = h1->next;
+            }
+            else
+            {
+                tail->next = h2;
+                tail = h2;
+                h2 = h2->next;
+            }
+        }
+
+        if (h1 == NULL)
+        {
+            tail->next = h2;
+        }
+        else
+        {
+            tail->next = h1;
+        }
+
+        return head;
+    }
+    Node<T> *mergeSort(Node<T> *head)
+    {
+
+        if (head == NULL || head->next == NULL)
+        {
+            return head;
+        }
+
+        Node<T> *slow = head;
+        Node<T> *fast = head->next;
+
+        while (fast != NULL && fast->next != NULL)
+        {
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+        Node<T> *h2 = slow->next;
+        slow->next = NULL;
+
+        head = mergeSort(head);
+        h2 = mergeSort(h2);
+
+        return mergeSortedList(head, h2);
+    }
+
     ~LinkedList()
     {
         Node<T> *current = head;
