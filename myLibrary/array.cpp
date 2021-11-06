@@ -27,6 +27,8 @@ class Array {
     Array operator+(Array<T>&);
     Array slice(int start, int end);
     Array filter(bool (*filter_function)(T arg));
+    Array map(T (*mapping_function)(T arg));
+    Array map(T (*mapping_function)(T arg, int index));
 
     friend ostream & operator<< (ostream &out, const Array &a) {
         out << '[' << ' ';
@@ -96,6 +98,20 @@ Array<T> Array<T>::filter(bool (*filter_func)(T arg)) {
 
     return newArray;
 }
+
+template <class T>
+Array<T> Array<T>::map(T (*mapping_function)(T arg)) {
+    Array<T> a(this->size);
+    for(int i = 0; i < this->size; i++) a.arr[i] = mapping_function(this->arr[i]);
+    return a;
+} 
+
+template <class T>
+Array<T> Array<T>::map(T (*mapping_function)(T arg, int index)) {
+    Array<T> a(this->size);
+    for(int i = 0; i < this->size; i++) a.arr[i] = mapping_function(this->arr[i], i);
+    return a;
+} 
 
 template <class T>
 int Array<T>::length() {

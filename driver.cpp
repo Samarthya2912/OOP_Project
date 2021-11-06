@@ -3,8 +3,8 @@
 #include "./myLibrary/array.cpp"
 using namespace std;
 
-int increment(int i) {
-    return (char)(i+1);
+int increment(int i, int index) {
+    return (char)(i+index);
 }
 
 bool lowthanthree(int i) {
@@ -12,7 +12,7 @@ bool lowthanthree(int i) {
 }
 
 int main() {
-    Array<int> c(10, increment);
-    auto d = c.filter(lowthanthree);
+    Array<int> c(10, 5);
+    auto d = c.map(increment);
     cout << c << d;
 }
