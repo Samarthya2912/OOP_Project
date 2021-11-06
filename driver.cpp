@@ -16,4 +16,7 @@ using namespace std;
 
 int main()
 {
+    LinkedList<int> a;
+    a.push_back(1);
+    a.push_back(2);
 }

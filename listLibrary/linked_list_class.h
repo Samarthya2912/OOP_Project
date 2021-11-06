@@ -224,7 +224,7 @@ public:
         return mergeSortedList(head, h2);
     }
 
-    ~LinkedList()
+       ~LinkedList()
     {
         Node<T> *current = head;
         while (current != nullptr)
