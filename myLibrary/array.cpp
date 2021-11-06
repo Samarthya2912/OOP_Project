@@ -22,11 +22,18 @@ class Array {
     }
 
     void display();
-    Array operator+(Array<T>&);
     T& operator[](int);
+    int length();
+    Array operator+(Array<T>&);
     Array slice(int start, int end);
     Array filter(bool (*filter_function)(T arg));
-    int size();
+
+    friend ostream & operator<< (ostream &out, const Array &a) {
+        out << '[' << ' ';
+        for(int i = 0; i < a.size; i++) out << a.arr[i] << (i == a.size - 1? " ":", ");
+        out << ']' << endl;
+        return out;
+    }
 
     ~Array() {
         delete[] arr;
@@ -91,6 +98,6 @@ Array<T> Array<T>::filter(bool (*filter_func)(T arg)) {
 }
 
 template <class T>
-int Array<T>::size() {
+int Array<T>::length() {
     return this->size;
 }

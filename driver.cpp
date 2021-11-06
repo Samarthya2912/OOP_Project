@@ -1,11 +1,10 @@
 #include <iostream>
 #include <string>
 #include "./myLibrary/array.cpp"
-#include "./myLibrary/bigint.cpp"
 using namespace std;
 
-int doubler(int i) {
-    return 2*i;
+int increment(int i) {
+    return (char)(i+1);
 }
 
 bool lowthanthree(int i) {
@@ -13,5 +12,7 @@ bool lowthanthree(int i) {
 }
 
 int main() {
-    Array<char> c(10);
+    Array<int> c(10, increment);
+    auto d = c.filter(lowthanthree);
+    cout << c << d;
 }
