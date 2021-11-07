@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "./myLibrary/array.cpp"
+#include "./myLibrary/avl.cpp"
 using namespace std;
 
 int increment(int i, int index) {
@@ -12,7 +12,7 @@ bool lowthanthree(int i) {
 }
 
 int main() {
-    Array<int> c(10, 5);
-    auto d = c.map(increment);
-    cout << c << d;
+    AVL<int> t;
+    for(int i = 0; i < 20; i++) t.insert(i);
+    t.printTree();
 }
