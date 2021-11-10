@@ -7,6 +7,17 @@ template <typename T>
 class Stack : public LinkedList<T>
 {
 public:
+    Stack()
+        : count(0), head(nullptr), tail(nullptr)
+    {
+    }
+    Stack(initializer_list<T> l) : count(0), head(nullptr), tail(nullptr)
+    {
+        for (const T &item : l)
+        {
+            push_back(item);
+        }
+    }
     void push(const T &ele)
     {
         this->push_front(ele);
@@ -14,7 +25,6 @@ public:
 
     int top()
     {
-
         return this->front();
     }
 

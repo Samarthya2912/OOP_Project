@@ -8,6 +8,19 @@ class Queue : public LinkedList<T>
 {
 
 public:
+    Queue()
+        : count(0), head(nullptr), tail(nullptr)
+    {
+    }
+
+    Queue(initializer_list<T> l) : count(0), head(nullptr), tail(nullptr)
+    {
+        for (const T &item : l)
+        {
+            push_back(item);
+        }
+    }
+
     void enque(const T &ele)
     {
         this->push_back(ele);
