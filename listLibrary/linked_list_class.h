@@ -199,7 +199,7 @@ public:
 
         return head;
     }
-    Node<T> *mergeSort(Node<T> *head)
+    Node<T> *SortList(Node<T> *head)
     {
 
         if (head == NULL || head->next == NULL)
@@ -218,13 +218,13 @@ public:
         Node<T> *h2 = slow->next;
         slow->next = NULL;
 
-        head = mergeSort(head);
-        h2 = mergeSort(h2);
+        head = sortList(head);
+        h2 = sortList(h2);
 
         return mergeSortedList(head, h2);
     }
 
-       ~LinkedList()
+    ~LinkedList()
     {
         Node<T> *current = head;
         while (current != nullptr)
