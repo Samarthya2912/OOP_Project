@@ -7,6 +7,7 @@ List all library ideas here.
 	<li>Linked list</li>
 	<li>Stack</li>
 	<li>Queue</li>
+  <li>AVL Trees </li>
 </ul>
 
 <hr/>
@@ -53,4 +54,11 @@ List all library ideas here.
 <ul>
 	<li>Dynamic Allocation of Nodes</li>
 	<li>Inheritance using Linked Listed Custom Library</l1>
+</ul>
+
+<h1>AVL Tree</h1>
+<ul>
+	<li>Insert</li>
+	<li>Delete</li>
+	<li>Ostream</li>
 </ul>
