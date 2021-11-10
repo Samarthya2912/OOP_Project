@@ -4,41 +4,42 @@
 using namespace std;
 
 template <typename T>
-class QueueClass : public LinkedList<T>
+class Queue : public LinkedList<T>
 {
-private:
-    LinkedList<T> queue;
 
 public:
+    Queue()
+        : count(0), head(nullptr), tail(nullptr)
+    {
+    }
+
+    Queue(initializer_list<T> l) : count(0), head(nullptr), tail(nullptr)
+    {
+        for (const T &item : l)
+        {
+            push_back(item);
+        }
+    }
+
     void enque(const T &ele)
     {
-        queue.push_back(ele);
-    }
-
-    int size() const
-    {
-        return queue.size();
-    }
-
-    int front()
-    {
-        return queue.front();
+        this->push_back(ele);
     }
 
     void deque()
     {
-        if (queue.size() == 0)
+        if (this->size() == 0)
         {
             cout << "queue empty";
             return;
         }
         NodeIterator<T> ittr;
-        ittr.current = queue.head;
-        queue.erase(ittr);
+        ittr.current = this->head;
+        this->erase(ittr);
     }
 
     bool isEmpty()
     {
-        return !queue.size();
+        return !this->size();
     }
 };

@@ -4,6 +4,10 @@ List all library ideas here.
 <ul>
 	<li>Array</li>
 	<li>bigint</li>
+	<li>Linked list</li>
+	<li>Stack</li>
+	<li>Queue</li>
+  <li>AVL Trees </li>
 </ul>
 
 <hr/>
