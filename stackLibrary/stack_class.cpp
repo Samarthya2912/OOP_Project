@@ -4,41 +4,44 @@
 using namespace std;
 
 template <typename T>
-class StackClass : public LinkedList<T>
+class Stack : public LinkedList<T>
 {
-private:
-    LinkedList<T> stack;
-
 public:
+    Stack()
+        : count(0), head(nullptr), tail(nullptr)
+    {
+    }
+    Stack(initializer_list<T> l) : count(0), head(nullptr), tail(nullptr)
+    {
+        for (const T &item : l)
+        {
+            push_back(item);
+        }
+    }
     void push(const T &ele)
     {
-        stack.push_front(ele);
-    }
-
-    int size() const
-    {
-        return stack.size();
+        this->push_front(ele);
     }
 
     int top()
     {
-        return stack.front();
+        return this->front();
     }
 
     void pop()
     {
-        if (stack.size() == 0)
+        if (this->size() == 0)
         {
             cout << "stack empty";
             return;
         }
         NodeIterator<T> ittr;
-        ittr.current = stack.head;
-        stack.erase(ittr);
+        ittr.current = this->head;
+        this->erase(ittr);
     }
 
     bool isEmpty()
     {
-        return !stack.size();
+        return !this->size();
     }
 };
