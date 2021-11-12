@@ -2,7 +2,7 @@
 using namespace std;
 
 template <typename T>
-class AVL
+class binaryTree
 {
 public:
     class node
@@ -40,7 +40,7 @@ public:
         cout << endl;
     }
 
-private:
+protected:
     int height(node *head)
     {
         if (head == nullptr)
@@ -193,7 +193,6 @@ private:
             return searchUtil(head->right, x);
     }
 
-public:
     void printSubtree(node *root, const string &prefix)
     {
         if (root == nullptr)
@@ -230,6 +229,7 @@ public:
         }
     }
 
+    public:
     void printTree(node *root = nullptr)
     {
         root = this->root;

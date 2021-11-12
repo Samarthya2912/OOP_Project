@@ -1,5 +1,5 @@
-#include "../listLibrary/linked_list_class.h"
-#include "../listLibrary/list_node.h"
+#include "linked_list_class.h"
+#include "list_node.h"
 #include <iostream>
 using namespace std;
 
@@ -8,16 +8,11 @@ class Queue : public LinkedList<T>
 {
 
 public:
-    Queue()
-        : count(0), head(nullptr), tail(nullptr)
-    {
-    }
-
-    Queue(initializer_list<T> l) : count(0), head(nullptr), tail(nullptr)
+    Queue(initializer_list<T> l)
     {
         for (const T &item : l)
         {
-            push_back(item);
+            this->push_back(item);
         }
     }
 
