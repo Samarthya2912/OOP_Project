@@ -1,5 +1,5 @@
-#include "../listLibrary/linked_list_class.h"
-#include "../listLibrary/list_node.h"
+#include "linked_list_class.h"
+#include "list_node.h"
 #include <iostream>
 using namespace std;
 
@@ -7,15 +7,11 @@ template <typename T>
 class Stack : public LinkedList<T>
 {
 public:
-    Stack()
-        : count(0), head(nullptr), tail(nullptr)
-    {
-    }
-    Stack(initializer_list<T> l) : count(0), head(nullptr), tail(nullptr)
+    Stack(initializer_list<T> l)
     {
         for (const T &item : l)
         {
-            push_back(item);
+            this->push_front(item);
         }
     }
     void push(const T &ele)
