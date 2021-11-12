@@ -60,5 +60,5 @@ List all library ideas here.
 <ul>
 	<li>Insert</li>
 	<li>Delete</li>
-	<li>Ostream</li>
+	<li>Print Tree</li>
 </ul>
