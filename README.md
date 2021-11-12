@@ -1,5 +1,10 @@
-<h1>OOP Project Custom C++ Library</h1>
+<h1>OOP Project Custom C++ Library 🔥 </h1>
 
+<h2><code> Steps for Installation </code> </h2>
+Step 1 : $ git clone https://github.com/Samarthya2912/OOP_Project.git <br/>
+Step 2 : That's it !! 😎🥲
+<hr/>
+<br/>
 List all library ideas here.
 <ul>
 	<li>Array</li>
