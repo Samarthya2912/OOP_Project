@@ -7,7 +7,7 @@ List all library ideas here.
 	<li>Linked list</li>
 	<li>Stack</li>
 	<li>Queue</li>
-  <li>AVL Trees </li>
+  <li>Binary Trees </li>
 </ul>
 
 <hr/>
@@ -56,7 +56,7 @@ List all library ideas here.
 	<li>Inheritance using Linked Listed Custom Library</l1>
 </ul>
 
-<h1>AVL Tree</h1>
+<h1>Binary Tree</h1>
 <ul>
 	<li>Insert</li>
 	<li>Delete</li>
