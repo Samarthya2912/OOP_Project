@@ -3,6 +3,8 @@
 <h2><code> Steps for Installation </code> </h2>
 Step 1 : $ git clone https://github.com/Samarthya2912/OOP_Project.git <br/>
 Step 2 : That's it !! 😎🥲
+
+Make sure to star it 😉⭐
 <hr/>
 <br/>
 List all library ideas here.
