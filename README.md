@@ -1,8 +1,8 @@
 <h1>OOP Project Custom C++ Library 🔥 </h1>
 
 <h2><code> Steps for Installation </code> </h2>
-Step 1 : $ git clone https://github.com/Samarthya2912/OOP_Project.git <br/>
-Step 2 : That's it !! 😎🥲
+<b>Step 1</b> : $ git clone https://github.com/Samarthya2912/OOP_Project.git <br/>
+<b>Step 2</b> : That's it !! 😎🥲
 
 Make sure to star it 😉⭐
 <hr/>
